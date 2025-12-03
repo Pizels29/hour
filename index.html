@@ -10,18 +10,19 @@
   <div class="container">
     <h1>An Hour of Studying</h1>
 
-    <!-- Setup Section -->
     <section id="setup">
+        <h1>(Totally did not waste my time making this rather than studying for math and bio)</h1>
       <h2>Enter your classes</h2>
       <div id="classes-list"></div>
       <input type="text" id="class-name" placeholder="Class name">
+      <p>Exam date</p>
       <input type="date" id="next-test" placeholder="Next test date">
+      <p>Rank how well you know the subject. Our algorithm will decide which test you should prioritize studying for</p>
       <input type="number" id="confidence" min="1" max="10" placeholder="Confidence (1-10)">
       <button id="add-class">Add Class</button>
       <button id="start-session">Start Study Session</button>
     </section>
 
-    <!-- Session Section -->
     <section id="session" style="display:none;">
       <h2>Today's Class: <span id="chosen-class"></span></h2>
       <p id="exam-date-display"></p>
