@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Hour of Studying</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>An Hour of Studying</h1>
+
+    <!-- Setup Section -->
+    <section id="setup">
+      <h2>Enter your classes</h2>
+      <div id="classes-list"></div>
+      <input type="text" id="class-name" placeholder="Class name">
+      <input type="date" id="next-test" placeholder="Next test date">
+      <input type="number" id="confidence" min="1" max="10" placeholder="Confidence (1-10)">
+      <button id="add-class">Add Class</button>
+      <button id="start-session">Start Study Session</button>
+    </section>
+
+    <!-- Session Section -->
+    <section id="session" style="display:none;">
+      <h2>Today's Class: <span id="chosen-class"></span></h2>
+      <p id="exam-date-display"></p>
+      <p>Time remaining: <span id="timer">60:00</span></p>
+      <button id="pause-resume">Pause</button>
+      <p>Current streak for this class: <span id="class-streak">0</span> days</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
